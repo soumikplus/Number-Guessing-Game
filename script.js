@@ -3,7 +3,7 @@ let guess = 1
 
 document.getElementById("submit-guess").onclick = function(){
     let x = parseInt(document.getElementById("guessField").value);
-    if(x<1 || x>5){
+    if(isNaN(x) || x<1 || x>5){
         alert("Oops! Please enter valid number between 1 and 5")
         return;
     }
